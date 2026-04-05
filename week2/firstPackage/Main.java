@@ -31,6 +31,12 @@ public class Main {
       System.out.println("입력하신 정보를 바탕으로 아기사자 객체를 만들고 있어요...");
       Lion newLion = new Lion(name, major, generation);
       System.out.println("🥳 아기사자 객체가 생성되었습니다!");
+
+      // 출력
+      System.out.println("🦁 아기사자 정보를 출력합니다.");
+      System.out.println("이름: " + newLion.name);
+      System.out.println("전공: " + newLion.major);
+      System.out.println("기수: " + newLion.getGeneration());
     }
   }
 }

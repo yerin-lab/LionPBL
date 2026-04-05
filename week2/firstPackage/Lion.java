@@ -10,4 +10,12 @@ public class Lion {
       this.major = major;
       this.generation = generation;
     }
+
+    public int getGeneration() {
+      return generation;
+    }
+
+    public void setGeneration() {
+      this.generation = generation;
+    }
 }
