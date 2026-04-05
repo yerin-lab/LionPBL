@@ -33,7 +33,7 @@ public class Step2 {
     else {
       // issue: 이미 객체가 생성된 상황.
       // 유효하지 않은 부분만 setter 함수 써서 다시 입력을 받을까?
-      System.out.println("⚠️ 유효하지 않은 입력입니다.");
+      System.out.println("❌ 유효하지 않은 입력입니다.");
     }
   }
 }
