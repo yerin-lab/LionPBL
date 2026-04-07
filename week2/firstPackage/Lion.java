@@ -6,6 +6,16 @@ public class Lion {
   private int generation; // Lion 클래스 내부에서만 직접 접근 가능
 
     public Lion(String name, String major, int generation) {
+      // 검증
+      System.out.println("검증을 시작합니다...🔍");
+      if (name.isBlank()) {
+        throw new IllegalArgumentException("⚠️ 이름은 비어있을 수 없습니다.");
+      } else if (major.isBlank()) {
+        throw new IllegalArgumentException("⚠️ 전공이 비어있을 수 없습니다.");
+      } else if (generation < 1) {
+        throw new IllegalArgumentException("⚠️ 기수는 1보다 작을 수 없습니다.");
+      }
+
       this.name = name;
       this.major = major;
       this.generation = generation;
@@ -19,22 +29,4 @@ public class Lion {
       this.generation = generation;
     }
 
-    public boolean isValid() {
-      // 검증
-      System.out.println("검증을 시작합니다...🔍");
-      if (name.isBlank()) {
-        System.out.println("⚠️ 이름은 비어있을 수 없습니다.");
-        return false;
-
-      } else if (major.isBlank()) {
-        System.out.println("⚠️ 전공이 비어있을 수 없습니다.");
-        return false;
-
-      } else if (generation < 1) {
-        System.out.println("⚠️ 기수는 1보다 작을 수 없습니다.");
-        return false;
-
-      }
-      return true;
-    }
 }
