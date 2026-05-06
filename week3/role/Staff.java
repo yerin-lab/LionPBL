@@ -2,6 +2,8 @@ package role;
 
 import policy.SubmitPolicy;
 
+// 추상화 클래스 Role을 상속받음으로써
+// Role 안에 있는 공통 속성과 메서드를 그대로 사용할 수 있다.
 public class Staff extends Role {
 
   private String position;

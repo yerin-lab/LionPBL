@@ -1,4 +1,3 @@
-// StaffPolicy.java
 package policy;
 
 import policy.SubmitPolicy;
