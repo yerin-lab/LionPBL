@@ -27,6 +27,10 @@ public abstract class Role {
     return name;
   }
 
+  public String getPart() {
+    return part;
+  }
+
   public boolean canSubmitAssignment() {
     return policy.canSubmit();
   }

@@ -38,6 +38,7 @@ public class Main {
 
         boolean isDuplicate = false;
 
+        // for-each문: members 리스트 안의 Role 객체들을 하나씩 꺼내서 member 변수에 저장하며 반복한다.
         for (Role member : members) {
           if (member.getName().equals(name)) {
             isDuplicate = true;
