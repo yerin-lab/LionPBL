@@ -23,6 +23,10 @@ public abstract class Role {
     this.policy = policy;
   }
 
+  public String getName() {
+    return name;
+  }
+
   public boolean canSubmitAssignment() {
     return policy.canSubmit();
   }
